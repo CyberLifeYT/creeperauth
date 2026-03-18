@@ -114,10 +114,10 @@ The launcher also writes a `CustomSkinLoader/Config.json` file to your profile d
 Standard WPF C# project. Clone it and open in Visual Studio 2022.
 
 ```
-git clone https://github.com/YOUR_USERNAME/CreeperLauncher.git
+git clone https://github.com/CyberLifeYT/CreeperLauncher.git
 ```
 
-Open `CreeperLauncher.sln`. Make sure you have the **.NET desktop development** workload installed in Visual Studio. Hit Build → Run.
+Open `Minecraft Launcher.sln`. Make sure you have the **.NET desktop development** workload installed in Visual Studio. Hit Build → Run.
 
 **NuGet dependencies** (restore automatically on build):
 - `CmlLib.Core` v4 — handles Minecraft downloading and launching
