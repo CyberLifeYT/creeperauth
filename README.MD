@@ -109,6 +109,22 @@ The launcher also writes a `CustomSkinLoader/Config.json` file to your profile d
 
 ---
 
+## Building from source
+
+Standard WPF C# project. Clone it and open in Visual Studio 2022.
+
+```
+git clone https://github.com/YOUR_USERNAME/CreeperLauncher.git
+```
+
+Open `CreeperLauncher.sln`. Make sure you have the **.NET desktop development** workload installed in Visual Studio. Hit Build → Run.
+
+**NuGet dependencies** (restore automatically on build):
+- `CmlLib.Core` v4 — handles Minecraft downloading and launching
+- `Newtonsoft.Json` — account and settings serialization
+
+---
+
 ## Where does it store stuff?
 
 ```
@@ -146,6 +162,15 @@ Minecraft itself installs into the normal `.minecraft` directory as always.
 The website for account management, skin uploads, the public player gallery, and docs is at [creeperauth.netlify.app](https://creeperauth.netlify.app). The [docs page](https://creeperauth.netlify.app/docs.html) has everything about setup, mod downloads, and troubleshooting.
 
 If you want to run your own private CreeperAuth instance (for a friend group, a server community, etc.) the docs explain how to set up your own Cloudflare Worker + Firebase backend from scratch for free.
+
+## Other
+
+I know the launcher is not yet called CreeperLauncher I forgot to change it
+---
+
+## License
+
+MIT. Do whatever you want with it.
 
 ---
 
