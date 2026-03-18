@@ -1,0 +1,36 @@
+**CreeperLauncher v1.0.0 — Source Code**
+
+This release includes two downloads:
+
+| File | What it is |
+|------|-----------|
+| `Release.zip` | Ready-to-run launcher — extract and run Minecraft Launcher.exe |
+| `Source.zip` | Full Visual Studio project — build it yourself |
+
+---
+
+**Building from Source.zip:**
+
+1. Download and extract `Source.zip`
+2. Open `CreeperLauncher.sln` in Visual Studio 2022
+3. Make sure the **.NET desktop development** workload is installed (VS will prompt you if not)
+4. NuGet packages restore automatically — just hit **Build → Run**
+
+**Dependencies (all via NuGet, restore automatically):**
+- `CmlLib.Core` v4 — Minecraft downloading and launching
+- `Newtonsoft.Json` — account and settings serialization
+
+**Requirements to build:**
+- Visual Studio 2022
+- .NET 6.0 SDK or higher
+- Windows (WPF project — Windows only)
+
+---
+
+**Notes on the source:**
+- The launcher isn't fully renamed to CreeperLauncher everywhere yet — some internal references and the title bar still show the old name, it's on the list
+- The CreeperAuth integration lives in `MainWindow.xaml.cs` — look for `CreeperAuthClient` and `AddCreeperAuthAccount_Click`
+- The mod sync logic that copies shared mods into per-profile directories before launch is in `SyncModsToProfile()`
+- All account data including CreeperAuth tokens is stored in `%AppData%\MCLauncher\accounts.json` — nothing is hardcoded
+
+Feel free to fork it, modify it, or use it as a base for your own launcher. MIT license.
