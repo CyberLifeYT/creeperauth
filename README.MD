@@ -59,7 +59,7 @@ It's not trying to be the next big launcher. It's a personal project that grew i
 ## Download & Install
 
 1. Go to the [Releases page](../../releases/latest)
-2. Download `CreeperLauncher.exe`
+2. Download `Release.zip`
 3. Run it — no installer, no setup wizard, it just opens
 
 All game files go into `%AppData%\MCLauncher\` automatically.
